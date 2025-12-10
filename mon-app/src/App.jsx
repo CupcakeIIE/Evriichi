@@ -9,18 +9,29 @@ function App() {
   const [view, setView] = useState('main');
 
   return (
-    <>
+    <div>
       <MyAppBar view={view} setView={setView}/>
-      {view === 'main' &&
-        <div style={{alignItems: 'center', justifyContent: 'center', display: 'flex', height: 'calc(100vh - 64px - 56px)'}}>
-          <MainPage />
-        </div>}
-      {view === 'tournois' &&
-        <div style={{display: 'flex', height: 'calc(100vh - 64px - 56px)', width: '100%'}}>
-          <Tournoi />
-        </div>}
+      <div
+        style={{
+          flex: 1,
+          overflowY: 'auto',
+          boxSizing: 'border-box',
+        }}
+      >
+        {view === 'main' && (
+          <div style={{ display: 'flex', height: '100%', justifyContent: 'center', alignItems: 'center' }}>
+            <MainPage />
+          </div>
+        )}
+
+        {view === 'tournois' && (
+          <div style={{ width: '100%' }}>
+            <Tournoi />
+          </div>
+        )}
+      </div>
       <MyBottomNavigation />
-    </>
+    </div>
   )
 }
 

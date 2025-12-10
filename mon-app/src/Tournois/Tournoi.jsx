@@ -8,6 +8,16 @@ const TournoiText = () => {
     <Typography variant='h6' style={{textAlign: 'left', textDecoration: 'underline'}}>Participants</Typography>
     <br/>
     <Typography style={{textAlign: 'left'}}>Anthony BARBIER</Typography>
+    <Typography style={{textAlign: 'left'}}>Selim TLATLI</Typography>
+    <Typography style={{textAlign: 'left'}}>Matthias MOYON</Typography>
+    <Typography style={{textAlign: 'left'}}>Silene YU</Typography>
+    <Typography style={{textAlign: 'left'}}>Victor CAI</Typography>
+    <br/>
+    <Typography variant='h6' style={{textAlign: 'left', textDecoration: 'underline'}}>Règles</Typography>
+    <p style={{textAlign: 'left'}}>Patati Patata ezlgjernjghhernhklkzrjnglregjrklhnrkldnbdflbnedtkl</p>
+    <p style={{textAlign: 'left'}}>Patati Patata ezlgjernjghhernhklkzrjnglregjrklhnrkldnbdflbnedtkl</p>
+    <p style={{textAlign: 'left'}}>Patati Patata ezlgjernjghhernhklkzrjnglregjrklhnrkldnbdflbnedtkl</p>
+    <p style={{textAlign: 'left'}}>Patati Patata ezlgjernjghhernhklkzrjnglregjrklhnrkldnbdflbnedtkl</p>
   </div>
 )}
 

@@ -23,7 +23,7 @@ const Tournoi = () => {
         Tournois
       </Typography>
 
-      <Paper sx={{ borderBottom: 1, borderColor: 'divider', marginTop: '2em', padding: '1em', borderRadius: '30px' }}>
+      <Paper elevation={6} sx={{ borderBottom: 1, borderColor: 'divider', marginTop: '2em', padding: '1em', borderRadius: '30px' }}>
         <Tabs value={tabValue} onChange={handleChange}>
           <Tab label="Tournoi 12/12/2025" />
           <Tab label="Tournoi 06/01/2026" />

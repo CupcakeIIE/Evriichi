@@ -8,6 +8,9 @@ const MyAppBar = ({view, setView}) => {
       <AppBar position="fixed" style={{backgroundColor: '#008000'}}>
         <Toolbar sx={{ justifyContent: 'flex-end' }}>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+            <Button className={classes.buttonAppBar} onClick={() => setView('main')}>
+              Accueil
+            </Button>
             <Button className={classes.buttonAppBar}>
               Adhésion
             </Button>
