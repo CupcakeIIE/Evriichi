@@ -4,31 +4,26 @@ import MyAppBar from './AppBar'
 import MyBottomNavigation from './BottomNavigation';
 import MainPage from './MainPage';
 import Tournoi from './Tournois';
+import Ressources from './Ressources';
 
 function App() {
   const [view, setView] = useState('main');
 
   return (
-    <div>
+    <div style={{ minHeight: '70vh', display: 'flex', flexDirection: 'column', width: '100%' }}>
       <MyAppBar view={view} setView={setView}/>
       <div
         style={{
           flex: 1,
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
           overflowY: 'auto',
-          boxSizing: 'border-box',
         }}
       >
-        {view === 'main' && (
-          <div style={{ display: 'flex', height: '100%', justifyContent: 'center', alignItems: 'center' }}>
-            <MainPage />
-          </div>
-        )}
-
-        {view === 'tournois' && (
-          <div style={{ width: '100%' }}>
-            <Tournoi />
-          </div>
-        )}
+        {view === 'main' && <MainPage />}
+        {view === 'tournois' && <Tournoi />}
+        {view === 'ressources' && <Ressources />}
       </div>
       <MyBottomNavigation />
     </div>

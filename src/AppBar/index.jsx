@@ -11,19 +11,31 @@ const MyAppBar = ({view, setView}) => {
             <Button className={classes.buttonAppBar} onClick={() => setView('main')}>
               Accueil
             </Button>
-            <Button className={classes.buttonAppBar}>
-              Adhésion
-            </Button>
-            <Button className={classes.buttonAppBar}>
-              Statuts
-            </Button>
+            <a
+              href="adhesion.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Button className={classes.buttonAppBar}>
+                Adhésion
+              </Button>
+            </a>
+            <a
+              href="statuts.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Button className={classes.buttonAppBar}>
+                Statuts
+              </Button>
+            </a>
             <Button className={classes.buttonAppBar} onClick={() => setView('tournois')}>
               Tournois
             </Button>
             <Button className={classes.buttonAppBar}>
               Palmarès
             </Button>
-            <Button className={classes.buttonAppBar}>
+            <Button className={classes.buttonAppBar} onClick={() => setView('ressources')}>
               Ressources
             </Button>
           </Box>
