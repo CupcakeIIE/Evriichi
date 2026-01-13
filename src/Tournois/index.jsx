@@ -14,8 +14,7 @@ const Tournoi = () => {
       style={{
         display: 'flex',
         flexDirection: 'column',
-        paddingTop: '64px',
-        paddingBottom: '56px',
+        padding: '5rem 2rem',
         width: '100%',
       }}
     >
