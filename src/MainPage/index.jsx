@@ -1,7 +1,7 @@
 import { Button, Grid, Typography } from "@mui/material";
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 
-const MainPage = () => {
+const MainPage = ({view, setView}) => {
   return (
     <div style={{width: '100%', paddingTop: '4rem'}}>
       <div style={{padding: '10em', backgroundColor: '#b2e4a5'}}>
@@ -27,7 +27,13 @@ const MainPage = () => {
         <div>
           <Typography>Adhérez à notre association en remplissant le formulaire disponible ci-dessous !</Typography>
           <br/>
-          <Button variant='contained' color='success'>Ici !</Button>
+          <a
+            href="adhesion.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button variant='contained' color='success'>Ici !</Button>
+          </a>
         </div>
       </div>
 
@@ -35,7 +41,13 @@ const MainPage = () => {
         <div>
           <Typography>Consultez les statuts de l'association ci-dessous !</Typography>
           <br/>
-          <Button variant='contained' color='success'>Ici !</Button>
+          <a
+            href="statuts.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button variant='contained' color='success'>Ici !</Button>
+          </a>
         </div>
         <img src='riichi.jpg' />
       </div>
@@ -47,7 +59,7 @@ const MainPage = () => {
           <Typography>Vous retrouverez les lieux, dates, participants et modalités.</Typography>
           <Typography>Pour ceci, cliquez sur le bouton ci dessous.</Typography>
           <br/>
-          <Button variant='contained' color='success'>Ici !</Button>
+          <Button variant='contained' color='success' onClick={() => setView('tournois')}>Ici !</Button>
         </div>
       </div>
 
@@ -66,7 +78,7 @@ const MainPage = () => {
           <Typography>Enfin, retrouvez ici les différentes ressources pour apprendre à jouer au mahjong.</Typography>
           <Typography>Ou pour en devenir un expert</Typography>
           <br/>
-          <Button variant='contained' color='success'>Ici !</Button>
+          <Button variant='contained' color='success' onClick={() => setView('ressources')}>Ici !</Button>
         </div>
       </div>
     </div>

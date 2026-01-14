@@ -32,7 +32,7 @@ const MyAppBar = ({view, setView}) => {
             <Button className={classes.buttonAppBar} onClick={() => setView('tournois')}>
               Tournois
             </Button>
-            <Button className={classes.buttonAppBar}>
+            <Button className={classes.buttonAppBar} onClick={() => setView('palmares')}>
               Palmarès
             </Button>
             <Button className={classes.buttonAppBar} onClick={() => setView('ressources')}>

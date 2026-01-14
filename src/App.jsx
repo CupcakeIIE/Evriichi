@@ -5,6 +5,7 @@ import MyBottomNavigation from './BottomNavigation';
 import MainPage from './MainPage';
 import Tournoi from './Tournois';
 import Ressources from './Ressources';
+import Palmares from './Palmares';
 
 function App() {
   const [view, setView] = useState('main');
@@ -21,8 +22,9 @@ function App() {
           overflowY: 'auto',
         }}
       >
-        {view === 'main' && <MainPage />}
+        {view === 'main' && <MainPage view={view} setView={setView} />}
         {view === 'tournois' && <Tournoi />}
+        {view === 'palmares' && <Palmares />}
         {view === 'ressources' && <Ressources />}
       </div>
       <MyBottomNavigation />
