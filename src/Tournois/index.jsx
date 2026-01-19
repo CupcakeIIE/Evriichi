@@ -23,7 +23,26 @@ const Tournoi = () => {
       </Typography>
 
       <Paper elevation={6} sx={{ borderBottom: 1, borderColor: 'divider', marginTop: '2em', padding: '1em', borderRadius: '30px' }}>
-        <Tabs value={tabValue} onChange={handleChange}>
+        <Tabs 
+          value={tabValue} 
+          onChange={handleChange}
+          sx={{
+            // Tabs non sélectionnés
+            '& .MuiTab-root': {
+              color: 'success.main',
+            },
+
+            // Tab sélectionné (IMPORTANT)
+            '& .MuiTab-root.Mui-selected': {
+              color: 'success.main',
+            },
+
+            // Indicateur (barre en dessous)
+            '& .MuiTabs-indicator': {
+              backgroundColor: 'success.main',
+            },
+          }}
+        >
           <Tab label="Tournoi 12/12/2025" />
           <Tab label="Tournoi 06/01/2026" />
           <Tab label="Tournoi 19/03/2026" />

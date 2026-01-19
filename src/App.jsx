@@ -27,7 +27,7 @@ function App() {
         {view === 'palmares' && <Palmares />}
         {view === 'ressources' && <Ressources />}
       </div>
-      <MyBottomNavigation />
+      {/* <MyBottomNavigation /> */}
     </div>
   )
 }

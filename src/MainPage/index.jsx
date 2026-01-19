@@ -4,7 +4,7 @@ import AddCircleIcon from '@mui/icons-material/AddCircle';
 const MainPage = ({view, setView}) => {
   return (
     <div style={{width: '100%', paddingTop: '4rem'}}>
-      <div style={{padding: '10em', backgroundColor: '#b2e4a5'}}>
+      <div style={{padding: '15em', backgroundColor: '#b2e4a5'}}>
         <Typography variant="h3">Evriichi</Typography>
         <br/>
         <Typography>Club de mahjong japonais à Évry-Coucouronnes (91)</Typography>
@@ -19,11 +19,11 @@ const MainPage = ({view, setView}) => {
             <AddCircleIcon fontSize='large' />
           </div>
         </div>
-        <img src='riichi.jpg' />
+        <img src='rejoindre.jpg' width='300' />
       </div>
       
       <div style={{padding: '10em', backgroundColor: '#b2e4a5', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '15rem'}}>
-        <img src='riichi.jpg' />
+        <img src='adhesion.jpg' width='500' />
         <div>
           <Typography variant='h4'>Adhésion</Typography>
           <br/>
@@ -53,11 +53,11 @@ const MainPage = ({view, setView}) => {
             <Button variant='contained' color='success'>Ici !</Button>
           </a>
         </div>
-        <img src='riichi.jpg' />
+        <img src='statuts2.png' width='500' />
       </div>
 
       <div style={{padding: '10em', backgroundColor: '#b2e4a5', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '15rem'}}>
-        <img src='riichi.jpg' />
+        <img src='tournois.png' width='300' />
         <div>
           <Typography variant='h4'>Tournois</Typography>
           <br/>
@@ -77,11 +77,11 @@ const MainPage = ({view, setView}) => {
           <br/>
           <Button variant='contained' color='success' onClick={() => setView('palmares')}>Ici !</Button>
         </div>
-        <img src='riichi.jpg' />
+        <img src='palmares.png' />
       </div>
       
       <div style={{padding: '10em', backgroundColor: '#b2e4a5', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '15rem'}}>
-        <img src='riichi.jpg' />
+        <img src='ressources.jpg' width='500' />
         <div>
           <Typography variant='h4'>Ressources</Typography>
           <br/>

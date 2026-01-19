@@ -1,4 +1,4 @@
-import { Box, AppBar, Toolbar, Button } from '@mui/material';
+import { Box, AppBar, Toolbar, Button, Typography } from '@mui/material';
 import useStyles from './style';
 
 const MyAppBar = ({view, setView}) => {
@@ -6,6 +6,7 @@ const MyAppBar = ({view, setView}) => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed" style={{backgroundColor: '#008000'}}>
+        {/* <Typography>Evriichi</Typography> */}
         <Toolbar sx={{ justifyContent: 'flex-end' }}>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             <Button className={classes.buttonAppBar} onClick={() => setView('main')}>
