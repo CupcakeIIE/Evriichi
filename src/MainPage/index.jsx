@@ -25,6 +25,8 @@ const MainPage = ({view, setView}) => {
       <div style={{padding: '10em', backgroundColor: '#b2e4a5', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '15rem'}}>
         <img src='riichi.jpg' />
         <div>
+          <Typography variant='h4'>Adhésion</Typography>
+          <br/>
           <Typography>Adhérez à notre association en remplissant le formulaire disponible ci-dessous !</Typography>
           <br/>
           <a
@@ -39,6 +41,8 @@ const MainPage = ({view, setView}) => {
 
       <div style={{padding: '10em', backgroundColor: '#c0cebd', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '15rem'}}>
         <div>
+          <Typography variant='h4'>Statuts</Typography>
+          <br/>
           <Typography>Consultez les statuts de l'association ci-dessous !</Typography>
           <br/>
           <a
@@ -55,6 +59,8 @@ const MainPage = ({view, setView}) => {
       <div style={{padding: '10em', backgroundColor: '#b2e4a5', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '15rem'}}>
         <img src='riichi.jpg' />
         <div>
+          <Typography variant='h4'>Tournois</Typography>
+          <br/>
           <Typography>Découvrez la liste des tournois de mahjong en France !</Typography>
           <Typography>Vous retrouverez les lieux, dates, participants et modalités.</Typography>
           <Typography>Pour ceci, cliquez sur le bouton ci dessous.</Typography>
@@ -65,9 +71,11 @@ const MainPage = ({view, setView}) => {
 
       <div style={{padding: '10em', backgroundColor: '#c0cebd', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '15rem'}}>
         <div>
+          <Typography variant='h4'>Palmarès</Typography>
+          <br/>
           <Typography>Admirez le palmarès de nos membres ci-dessous !</Typography>
           <br/>
-          <Button variant='contained' color='success'>Ici !</Button>
+          <Button variant='contained' color='success' onClick={() => setView('palmares')}>Ici !</Button>
         </div>
         <img src='riichi.jpg' />
       </div>
@@ -75,6 +83,8 @@ const MainPage = ({view, setView}) => {
       <div style={{padding: '10em', backgroundColor: '#b2e4a5', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '15rem'}}>
         <img src='riichi.jpg' />
         <div>
+          <Typography variant='h4'>Ressources</Typography>
+          <br/>
           <Typography>Enfin, retrouvez ici les différentes ressources pour apprendre à jouer au mahjong.</Typography>
           <Typography>Ou pour en devenir un expert</Typography>
           <br/>
