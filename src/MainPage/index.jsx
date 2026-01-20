@@ -4,10 +4,35 @@ import AddCircleIcon from '@mui/icons-material/AddCircle';
 const MainPage = ({view, setView}) => {
   return (
     <div style={{width: '100%', paddingTop: '4rem'}}>
-      <div style={{padding: '15em', backgroundColor: '#b2e4a5'}}>
-        <Typography variant="h3">Evriichi</Typography>
-        <br/>
-        <Typography>Club de mahjong japonais à Évry-Coucouronnes (91)</Typography>
+      <div style={{
+        padding: '16em', 
+        backgroundImage: `url(${'riichi2.jpg'})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        // height: "100vh",
+        position: 'relative'
+      }}
+      >
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            backgroundColor: "rgba(0, 0, 0, 0.4)", // transparence ici
+          }}
+        />
+        <div
+          style={{
+            position: "relative",
+            zIndex: 1,
+            color: "white",
+            padding: "20px",
+          }}
+        >
+          <Typography variant="h3">Evriichi</Typography>
+          <br/>
+          <Typography>Club de mahjong japonais à Évry-Coucouronnes (91)</Typography>
+        </div>
+        
       </div>
 
       <div style={{padding: '10em', backgroundColor: '#c0cebd', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '15rem'}}>
@@ -15,7 +40,7 @@ const MainPage = ({view, setView}) => {
           <Typography variant='h4'>Rejoignez-nous !</Typography>
           <Typography>Sur Discord ou sur Matrix</Typography>
           <div style={{gap:'1rem', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '1rem'}}>
-            <AddCircleIcon fontSize='large' />
+            <a href='https://discord.com/invite/69xUzRYy92' target='_blank'><img src='discord.png' width='50' /></a>
             <AddCircleIcon fontSize='large' />
           </div>
         </div>
