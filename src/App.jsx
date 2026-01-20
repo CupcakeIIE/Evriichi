@@ -12,7 +12,7 @@ function App() {
   const [view, setView] = useState('main');
 
   return (
-    <div style={{ minHeight: '70vh', display: 'flex', flexDirection: 'column', width: '100%' }}>
+    <div style={{ minHeight: '70vh', display: 'flex', flexDirection: 'column', width: '100%'/* , height: '100%', backgroundColor: '#defad7'  */}}>
       <MyAppBar view={view} setView={setView}/>
       <div
         style={{
