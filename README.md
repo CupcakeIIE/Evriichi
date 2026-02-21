@@ -18,11 +18,11 @@ If you are developing a production application, we recommend using TypeScript wi
 
 # Add data to the page
 ## Tournois
-Modify Tournois/index.jsx. Line 37 and 44 modify or add a new line with the new date of the tournament.
+Modify Tournois/index.jsx. Line 37 and 44 modify or add a new line with the new date of the tournament.   
 Then duplicate the file Tournoi13122025 (Tournoi followed by the date) and change data in it. The participants, rules, and add more section if needed.
 
 
 # Deploy
-Deploy new version on git hub pages using `npm run deploy` and then wait ~ 5min for git to get new version
-For this, react, vite, node.js need to be installed
-Or just ask me to re-deploy when you're modifications are done.
+Deploy new version on git hub pages using `npm run deploy` and then wait ~ 5min for git to get new version  
+For this, react, vite, node.js need to be installed  
+Or just ask me to re-deploy when you're modifications are done.  
